@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Holistic3D_courses.Mathematics_for_gamedev.Vectors.Scripts
+namespace Holistic3D_courses.Mathematics_for_gamedev.Vectors
 {
     public static class VectorUtils
     {

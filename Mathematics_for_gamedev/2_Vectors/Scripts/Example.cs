@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Holistic3D_courses.Mathematics_for_gamedev.Vectors.Scripts
+namespace Holistic3D_courses.Mathematics_for_gamedev.Vectors
 {
     public class Example : MonoBehaviour
     {
