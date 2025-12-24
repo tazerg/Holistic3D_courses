@@ -50,12 +50,12 @@ namespace Holistic3D_courses.Mathematics_for_gamedev._Affine_transformations
         {
             var point = new Vector4(source.x, source.y, source.z, 1);
             /*
-             * Rotation matrix:
+             * Rotation matrix for Euler Angles:      Rotation matrix for Quaternions:
              * X:
-             * | 1 0            0             0 |
-             * | 0 cos(euler.x) -sin(euler.x) 0 |
-             * | 0 sin(euler.x) cos(euler.x)  0 |
-             * | 0 0            0             1 |
+             * | 1 0            0             0 |    | 1-2*(q.y)^2-2*(q.z)^2 2*q.x*q.y-2*q.w*q.z   2*q.x*q.z+2*q.w*q.y   0 |
+             * | 0 cos(euler.x) -sin(euler.x) 0 |    | 2*q.x*q.y+2*q.w*q.z   1-2*(q.x)^2-2*(q.z)^2 2*q.y*q.z-2*q.w*q.x   0 |
+             * | 0 sin(euler.x) cos(euler.x)  0 |    | 2*q.x*q.z-2*q.w*q.y   2*q.y*q.z+2*q.w*q.x   1-2*(q.x)^2-2*(q.y)^2 0 |
+             * | 0 0            0             1 |    | 0                     0                     0                     1 |
              *
              * Y:
              * | cos(euler.y)  0 sin(euler.y) 0 |
